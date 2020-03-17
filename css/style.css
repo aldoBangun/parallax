@@ -1,0 +1,56 @@
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #f00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: monospace;
+}
+.container{
+    overflow: hidden;
+}
+section, main{
+    height: 100vh;
+    position: relative;
+}
+section{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    height: 100vh;
+}
+.text{
+    position: absolute;
+    padding: 0 0 20px;
+    border-bottom: 5px solid #f00;
+    top: 50px;
+    right: -50%;
+    opacity: 0;
+}
+.text p{
+    line-height: 20px;
+}
+main img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0;
+}
+main img:nth-child(2){
+    bottom: 50px;
+    left: 20px;
+}
+main img:last-child{
+    top: 50px;
+    right: 20px;
+}
